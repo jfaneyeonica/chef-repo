@@ -1,0 +1,295 @@
+{
+  "revision_id": "a7b4ec685f2a57ff0021698e61fdc29d53b749fc219e647acd51ff746e4744e2",
+  "name": "opsworks-demo-webserver",
+  "run_list": [
+    "recipe[chef-client::default]",
+    "recipe[opsworks-webserver::default]",
+    "recipe[audit::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "audit": {
+      "version": "9.5.0",
+      "identifier": "4f2cbe355786b19360128bb32c003545535e2c96",
+      "dotted_decimal_identifier": "22285718610478769.41482454345919488.58571867696278",
+      "cache_key": "audit-9.5.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/9.5.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/9.5.0/download",
+        "version": "9.5.0"
+      }
+    },
+    "build-essential": {
+      "version": "8.2.1",
+      "identifier": "4b9d5c72796184085681d3eefd625c90b79530a8",
+      "dotted_decimal_identifier": "21283643636408708.2346915420110178.101776625053864",
+      "cache_key": "build-essential-8.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.2.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/8.2.1/download",
+        "version": "8.2.1"
+      }
+    },
+    "chef-client": {
+      "version": "12.3.1",
+      "identifier": "1d09eef8abb767030d5ccc4d60d4930c398ce5ac",
+      "dotted_decimal_identifier": "8173696303478631.859117145907412.161680714425772",
+      "cache_key": "chef-client-12.3.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/12.3.1/download",
+        "version": "12.3.1"
+      }
+    },
+    "cron": {
+      "version": "6.3.1",
+      "identifier": "8c6af9e7bc11e5d0e91b6583854ffc826642130e",
+      "dotted_decimal_identifier": "39524118306755045.58803099032323407.277636991554318",
+      "cache_key": "cron-6.3.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.3.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.3.1/download",
+        "version": "6.3.1"
+      }
+    },
+    "logrotate": {
+      "version": "2.2.3",
+      "identifier": "7ad63847a1c2149199d70f442b9abda2c367cecd",
+      "dotted_decimal_identifier": "34575484366995988.40983020576189338.208506760711885",
+      "cache_key": "logrotate-2.2.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.3/download",
+        "version": "2.2.3"
+      }
+    },
+    "mingw": {
+      "version": "2.1.1",
+      "identifier": "2f7f0e1ca530683eabf54e504b44807b16dc5ce1",
+      "dotted_decimal_identifier": "13369022492258408.17640518625282884.141266152873185",
+      "cache_key": "mingw-2.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/2.1.1/download",
+        "version": "2.1.1"
+      }
+    },
+    "nginx": {
+      "version": "9.0.0",
+      "identifier": "0dca19d00840a97aa44d58c47aa831f793ba3faf",
+      "dotted_decimal_identifier": "3881386910433449.34520599267408552.54939405139887",
+      "cache_key": "nginx-9.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/9.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/nginx/versions/9.0.0/download",
+        "version": "9.0.0"
+      }
+    },
+    "ohai": {
+      "version": "5.3.0",
+      "identifier": "3ad58179813321f2497a12ea4e2bbb6018a47ee3",
+      "dotted_decimal_identifier": "16560300715225889.68197733016161835.206021404688099",
+      "cache_key": "ohai-5.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
+        "version": "5.3.0"
+      }
+    },
+    "opsworks-webserver": {
+      "version": "0.6.1",
+      "identifier": "5a9d9baa6dc3223dd6ec65e8b984995100b2b25c",
+      "dotted_decimal_identifier": "25506039808770850.17406284389726596.168573183111772",
+      "source": "site-cookbooks/opsworks-webserver",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/jfaneyeonica/chef-repo.git",
+        "revision": "fb3040ddee89247819fa9e0d42d3ed6118409816",
+        "working_tree_clean": true,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "site-cookbooks/opsworks-webserver"
+      }
+    },
+    "seven_zip": {
+      "version": "3.1.2",
+      "identifier": "0e1fed3b56aa5e84205e330d92aca22d8704a014",
+      "dotted_decimal_identifier": "3975753437194846.37190285881348780.178316422455316",
+      "cache_key": "seven_zip-3.1.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.1.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/3.1.2/download",
+        "version": "3.1.2"
+      }
+    },
+    "windows": {
+      "version": "7.0.2",
+      "identifier": "d30610e83214a12feb3f8c2fe67d24ff7f42fa8e",
+      "dotted_decimal_identifier": "59397889770788001.13487982072817277.40679770356366",
+      "cache_key": "windows-7.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.2/download",
+        "version": "7.0.2"
+      }
+    },
+    "yum-epel": {
+      "version": "3.3.0",
+      "identifier": "187c02d6cef471b7f37402ac80fb6ca2db347732",
+      "dotted_decimal_identifier": "6891751076721777.51777600324665595.119446718150450",
+      "cache_key": "yum-epel-3.3.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/3.3.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/3.3.0/download",
+        "version": "3.3.0"
+      }
+    }
+  },
+  "default_attributes": {
+    "opsworks-demo": {
+      "audit": {
+        "reporter": "chef-server-automate",
+        "profiles": [
+          {
+            "name": "DevSec SSH Baseline",
+            "compliance": "admin/ssh-baseline"
+          }
+        ]
+      }
+    }
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "audit",
+        "= 9.5.0"
+      ],
+      [
+        "build-essential",
+        "= 8.2.1"
+      ],
+      [
+        "chef-client",
+        "= 12.3.1"
+      ],
+      [
+        "cron",
+        "= 6.3.1"
+      ],
+      [
+        "logrotate",
+        "= 2.2.3"
+      ],
+      [
+        "mingw",
+        "= 2.1.1"
+      ],
+      [
+        "nginx",
+        "= 9.0.0"
+      ],
+      [
+        "ohai",
+        "= 5.3.0"
+      ],
+      [
+        "opsworks-webserver",
+        ">= 0.0.0"
+      ],
+      [
+        "seven_zip",
+        "= 3.1.2"
+      ],
+      [
+        "windows",
+        "= 7.0.2"
+      ],
+      [
+        "yum-epel",
+        "= 3.3.0"
+      ]
+    ],
+    "dependencies": {
+      "audit (9.5.0)": [
+
+      ],
+      "build-essential (8.2.1)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
+        ]
+      ],
+      "chef-client (12.3.1)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
+      "cron (6.3.1)": [
+
+      ],
+      "logrotate (2.2.3)": [
+
+      ],
+      "mingw (2.1.1)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "nginx (9.0.0)": [
+        [
+          "build-essential",
+          ">= 5.0.0"
+        ],
+        [
+          "ohai",
+          ">= 4.1.0"
+        ],
+        [
+          "yum-epel",
+          ">= 0.0.0"
+        ]
+      ],
+      "ohai (5.3.0)": [
+
+      ],
+      "opsworks-webserver (0.6.1)": [
+        [
+          "nginx",
+          "~> 9.0.0"
+        ]
+      ],
+      "seven_zip (3.1.2)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "windows (7.0.2)": [
+
+      ],
+      "yum-epel (3.3.0)": [
+
+      ]
+    }
+  }
+}
